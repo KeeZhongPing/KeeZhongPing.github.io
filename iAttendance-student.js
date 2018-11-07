@@ -7,7 +7,15 @@ firebase.database().ref('Question of the day/').on("value",function(snapshot){
    
   });
 
-
+//Prof redirect page
+$('#prof').on('click', function(e) { 
+  var password = prompt("PLEASE ENTER PASSWORD: ");
+  if(password=="prof"){
+    window.location.href="iAttendance-tutor.html";
+  }else{
+    alert("Incorrect Password");
+  }
+       });
  
 //Submit the students answer
   $('#submitBtnstudent').on('click', function(e) {

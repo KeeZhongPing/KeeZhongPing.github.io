@@ -31,7 +31,7 @@ background-color: ghostwhite;
 margin-left:2%;
 }
 
-#submitBtnstudent{
+#submitBtnstudent, #prof{
     margin-left:1.5%;
     /*Credits to https://www.bestcssbuttongenerator.com/#/23*/
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -60,7 +60,7 @@ margin-left:2%;
 	text-shadow:0px 1px 0px #ffffff;
 
 }
-#submitBtnstudent:hover{
+#submitBtnstudent:hover,#prof:hover{
      /*Credits to https://www.bestcssbuttongenerator.com/#/23*/
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
 	background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
@@ -71,6 +71,7 @@ margin-left:2%;
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
 	background-color:#f6f6f6;
 }
+
 #board{
     background-color:rgb(180, 180, 180);
     margin:30%;
