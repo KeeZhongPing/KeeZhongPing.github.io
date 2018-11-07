@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <link rel="stylesheet" type="text/css" href="iAttendance.css">
+          
+          
+    </head>
+<body>
+
+<p id="Header">Welcome to iAttendance![Professor]</p>
+<hr>
+<div id="voiceRec" display="inline-block">
+  <h1>Input an attendance question</h1>
+<textarea id="note-textarea" placeholder="Create a new note by typing or using voice recognition." rows="6"></textarea>
+<button id="start-record-btn" title="Start Recording">Start Recognition</button>
+<button id="submitBtn" >Submit</button>
+</div>
+<div id="StudentAnswers" display="inline-block">
+    <h1>Enter a date to get answers</h1>
+<input id="getDate" placeholder=" 31/10 = 3110" rows="1">
+<button id="submitDate" >Submit Date</button>
+<ol id="QnA"></ol>
+</div>
+<div id="AbsentList" display="inline-block">
+    <h1>Enter a date to get list of absent students</h1>
+<input id="getAbsent" placeholder=" 31/10 = 3110" />
+<button id="submitAbsent" >Submit Absent</button>
+<ol id="Abs"></ol>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAGFSkfCRBUgW9klff0wgBWek17kf-JijI",
+    authDomain: "get1033-ce07e.firebaseapp.com",
+    databaseURL: "https://get1033-ce07e.firebaseio.com",
+    projectId: "get1033-ce07e",
+    storageBucket: "get1033-ce07e.appspot.com",
+    messagingSenderId: "675066300571"
+  };
+  firebase.initializeApp(config);
+  //To reference the db thing
+  var database = firebase.database();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="iAttendance.js"></script>
+
+</body>
+</html>

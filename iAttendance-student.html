@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <link rel="stylesheet" type="text/css" href="iAttendance-student.css">
+           
+          
+    </head>
+<body>
+
+<p id="Header">Welcome to iAttendance! [Student]</p>
+<hr>
+<p id="stuQuestion">Your tutor has yet to post an attendance question. Wait out for it!</p>
+<div id="board" display="inline-block">
+<h1 id="answerBox">Please input your answers and metric No.</p>
+<textarea id="studentNote" placeholder="Please input your answer here." rows="6"></textarea>
+<textarea id="studentMatric" placeholder="Matric No." rows="1"></textarea>
+<button id="submitBtnstudent">Submit</button>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAGFSkfCRBUgW9klff0wgBWek17kf-JijI",
+    authDomain: "get1033-ce07e.firebaseapp.com",
+    databaseURL: "https://get1033-ce07e.firebaseio.com",
+    projectId: "get1033-ce07e",
+    storageBucket: "get1033-ce07e.appspot.com",
+    messagingSenderId: "675066300571"
+  };
+  firebase.initializeApp(config);
+  //To reference the db thing
+  var database = firebase.database();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="iAttendance-student.js"></script>
+</body>
+</html>
