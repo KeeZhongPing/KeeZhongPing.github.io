@@ -2,7 +2,9 @@ body{
 background-color: ghostwhite;
 }
 
-
+#copyr{
+	margin-top:-18%;
+}
 #Header{
     color:gray;
     font-size: 50px;
